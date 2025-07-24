@@ -22,6 +22,22 @@ cp .zshrc ~/
 cp .gitconfig ~/
 cp node/.npmrc ~/.npmrc
 
+# Install Oh My Zsh if not installed
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+  echo "Installing Oh My Zsh..."
+  export RUNZSH=no
+  export CHSH=no
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+else
+  echo "Oh My Zsh already installed."
+fi
+
+# Set zsh as default shell if not already
+if [ "$SHELL" != "/bin/zsh" ]; then
+  chsh -s /bin/zsh
+  echo "Default shell changed to zsh. You may need to log out and back in for this to take effect."
+fi
+
 # --- GitHub SSH Setup ---
 if [ ! -f "$HOME/.ssh/id_ed25519" ]; then
   echo "Generating a new SSH key for GitHub..."
@@ -29,12 +45,12 @@ if [ ! -f "$HOME/.ssh/id_ed25519" ]; then
   eval "$(ssh-agent -s)"
   ssh-add "$HOME/.ssh/id_ed25519"
   echo "SSH key generated."
+
+  echo "Copy the following SSH public key and add it to your GitHub account (https://github.com/settings/keys):"
+  cat "$HOME/.ssh/id_ed25519.pub"
 else
   echo "SSH key already exists."
 fi
-
-echo "Copy the following SSH public key and add it to your GitHub account (https://github.com/settings/keys):"
-cat "$HOME/.ssh/id_ed25519.pub"
 
 
 # Copy VSCode settings
