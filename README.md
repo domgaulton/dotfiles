@@ -9,6 +9,11 @@
 
 ## Tips / Notes
 
+### GraphQl
+
+- https://studio.apollographql.com/public/SpaceX-pxxbxen/variant/current/explorer
+- https://studio.apollographql.com/sandbox/explorer/?referrer=docs-content
+
 ### Bruno
 
 - Use alongside https://github.com/domgaulton/bruno-api-collection
