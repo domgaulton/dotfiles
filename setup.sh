@@ -11,11 +11,21 @@ fi
 # Install OrbStack (instead of Docker Desktop)
 brew install --cask orbstack
 
+# Install VSCode
+brew install --cask visual-studio-code
+
+# Install Docker 
+brew install docker
+brew link docker
+
 # Install Node.js (latest LTS)
 brew install node
 
-# Install VSCode
-brew install --cask visual-studio-code
+# Install PostgresSQL
+brew install postgresql@14
+
+# Install Table Plus
+brew install --cask tableplus
 
 # Copy config files
 cp .zshrc ~/
@@ -69,4 +79,4 @@ else
   echo "Then re-run this script to install extensions."
 fi
 
-echo "Setup complete! Please start OrbStack and VSCode from Applications."
+echo "Setup complete!"
