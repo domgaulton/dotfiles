@@ -1,13 +1,12 @@
 # Dotfiles Setup
 
-## Usage
+## Clone this repository:
 
-1. Clone this repository:
-git clone https://github.com/yourusername/dotfiles.git
-cd dotfiles
+- git clone https://github.com/yourusername/dotfiles.git
+- cd dotfiles
+- `chmod +x setup.sh` makes the setup.sh file executable so you can run it as a program
+- `./setup.sh` Run script
 
-2. Get ready for setup
-`chmod +x setup.sh` - Makes the setup.sh file executable so you can run it as a program
+## Tips
 
-3. Execute script
-`./setup.sh`
+run `source ~/.zshrc` to update zsh without resetting terminal
