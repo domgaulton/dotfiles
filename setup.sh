@@ -30,6 +30,9 @@ brew install --cask tableplus
 # Gemini CLI
 brew install gemini-cli
 
+# Bruno
+brew install --cask bruno
+
 # Copy config files
 cp .zshrc ~/
 cp .gitconfig ~/
