@@ -27,6 +27,9 @@ brew install postgresql@14
 # Install Table Plus
 brew install --cask tableplus
 
+# Gemini CLI
+brew install gemini-cli
+
 # Copy config files
 cp .zshrc ~/
 cp .gitconfig ~/
