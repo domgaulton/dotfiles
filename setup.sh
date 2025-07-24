@@ -22,6 +22,21 @@ cp .zshrc ~/
 cp .gitconfig ~/
 cp node/.npmrc ~/.npmrc
 
+# --- GitHub SSH Setup ---
+if [ ! -f "$HOME/.ssh/id_ed25519" ]; then
+  echo "Generating a new SSH key for GitHub..."
+  ssh-keygen -t ed25519 -C "domgaulton@gmail.com" -f "$HOME/.ssh/id_ed25519" -N ""
+  eval "$(ssh-agent -s)"
+  ssh-add "$HOME/.ssh/id_ed25519"
+  echo "SSH key generated."
+else
+  echo "SSH key already exists."
+fi
+
+echo "Copy the following SSH public key and add it to your GitHub account (https://github.com/settings/keys):"
+cat "$HOME/.ssh/id_ed25519.pub"
+
+
 # Copy VSCode settings
 VSCODE_USER_SETTINGS_DIR="$HOME/Library/Application Support/Code/User"
 mkdir -p "$VSCODE_USER_SETTINGS_DIR"
