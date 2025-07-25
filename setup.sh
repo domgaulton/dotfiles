@@ -37,6 +37,7 @@ brew install --cask bruno
 cp .zshrc ~/
 cp .gitconfig ~/
 cp node/.npmrc ~/.npmrc
+cp vscode/.prettierrc ~/.prettierrc
 
 # Install Oh My Zsh if not installed
 if [ ! -d "$HOME/.oh-my-zsh" ]; then

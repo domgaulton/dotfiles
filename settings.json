@@ -1,8 +1,0 @@
-{
-  "editor.tabSize": 2,
-  "editor.formatOnSave": true,
-  "files.autoSave": "onFocusChange",
-  "terminal.integrated.fontSize": 14,
-  "workbench.colorTheme": "Visual Studio Dark",
-  "extensions.ignoreRecommendations": false
-}
