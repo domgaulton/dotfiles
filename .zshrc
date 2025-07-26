@@ -18,5 +18,6 @@ alias gs="git status"
 alias ga="git add"
 alias gaa="git add ."
 alias gcm="git commit -m"
+alias gp="git push"
 alias python=python3
 alias pip=pip3
