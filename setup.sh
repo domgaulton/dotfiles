@@ -33,6 +33,9 @@ brew install gemini-cli
 # Bruno
 brew install --cask bruno
 
+# WhatsApp
+brew install --cask whatsapp
+
 # Copy config files
 cp .zshrc ~/
 cp .gitconfig ~/
