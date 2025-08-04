@@ -38,13 +38,16 @@ brew install --cask whatsapp
 
 # Ollama
 brew install ollama 
-# then 
+# Ollama README 
 # option 1 `brew services start ollama` This will start Ollama and keep it running in the background, even after you restart your computer.
 # option 2 `ollama serve`
 # `ollama run mistral` // or any other LLM
 
-## Jan.AI
+## Jan.ai
 brew install --cask jan
+# Jan.ai README
+# Install local model
+# Currently using `DeepSeek-R1-0528` and `Mistral-7B` 
 
 # Copy config files
 cp .zshrc ~/
