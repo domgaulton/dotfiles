@@ -36,6 +36,16 @@ brew install --cask bruno
 # WhatsApp
 brew install --cask whatsapp
 
+# Ollama
+brew install ollama 
+# then 
+# option 1 `brew services start ollama` This will start Ollama and keep it running in the background, even after you restart your computer.
+# option 2 `ollama serve`
+# `ollama run mistral` // or any other LLM
+
+## Jan.AI
+brew install --cask jan
+
 # Copy config files
 cp .zshrc ~/
 cp .gitconfig ~/
