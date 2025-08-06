@@ -3,7 +3,7 @@
   "editor.formatOnSave": true,
   "files.autoSave": "onFocusChange",
   "terminal.integrated.fontSize": 14,
-  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.colorTheme": "Dark Modern",
   "extensions.ignoreRecommendations": false,
   "prettier.configPath": "~/.prettierrc"
 }
