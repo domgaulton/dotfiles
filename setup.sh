@@ -21,6 +21,9 @@ brew link docker
 # Install Node.js (latest LTS)
 brew install node
 
+# Install pnpm
+brew install pnpm
+
 # Install PostgresSQL
 brew install postgresql@14
 
