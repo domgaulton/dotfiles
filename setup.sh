@@ -30,8 +30,14 @@ brew install postgresql@14
 # Install Table Plus
 brew install --cask tableplus
 
+# Install Claude Code CLI
+brew install --cask claude-code
+
 # Gemini CLI
 brew install gemini-cli
+
+# Slack
+brew install --cask slack
 
 # Bruno
 brew install --cask bruno
