@@ -1,5 +1,7 @@
-FROM node:18
+FROM node:18-alpine
+RUN corepack enable pnpm
 WORKDIR /app
+COPY package.json ./
+RUN pnpm install
 COPY . .
-RUN npm install
 CMD ["node", "index.js"]

@@ -4,8 +4,8 @@
 
 - git clone https://github.com/yourusername/dotfiles.git
 - cd dotfiles
-- `chmod +x setup.sh` makes the setup.sh file executable so you can run it as a program
-- `./setup.sh` Run script
+- Either `pnpm i` to install and `pnpm run start` or;
+- `chmod +x setup.sh` makes the setup.sh file executable so you can run it as a program and `./setup.sh` Run script
 
 ## Tips / Notes
 
@@ -25,3 +25,21 @@
 ### zsh
 
 - Run `source ~/.zshrc` to update zsh without resetting terminal
+
+### Docker
+
+Build and run the Docker container:
+
+```bash
+# Build the image
+docker build -t dotfiles .
+
+# Run the container
+docker run dotfiles
+```
+
+Or run in interactive mode:
+
+```bash
+docker run -it dotfiles sh
+```
